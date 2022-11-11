@@ -1,0 +1,168 @@
+{
+  "patients": [
+    {
+      "name": "leonardo",
+      "lastName": "Rivera",
+      "age": 50,
+      "address": "Santa anita",
+      "email": "leonardo@gmail.com",
+      "password": "12345",
+      "dermatologistId": 2,
+      "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg",
+      "id": 8
+    },
+    {
+      "name": "Romina",
+      "lastName": "Taboada",
+      "age": 18,
+      "address": "Lima",
+      "email": "limas@gmail.com",
+      "password": "12345",
+      "dermatologistId": 1,
+      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-IFVAnDFmPDjhijJijwlt_XvLuLh3FJV-Ug&usqp=CAU",
+      "id": 11
+    },
+    {
+      "name": "Jose",
+      "lastName": "Torres",
+      "age": "19",
+      "address": "Unknown",
+      "email": "torres@gmail.com",
+      "password": "12345",
+      "dermatologistId": 2,
+      "urlImage": "https://img.freepik.com/foto-gratis/guapo-exitoso-hombre-negocios-sonriente_176420-19024.jpg?w=2000",
+      "id": 13
+    },
+    {
+      "name": "Diego",
+      "lastName": "Armas",
+      "age": "20",
+      "address": "calle 1",
+      "email": "u202017237@upc.edu.pe",
+      "password": "12345",
+      "dermatologistId": 2,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 14
+    },
+    {
+      "name": "Ana Romina",
+      "lastName": "Tang",
+      "age": "22",
+      "address": "calle 2",
+      "email": "valetodo@gmail.com",
+      "password": "123456",
+      "dermatologistId": 0,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 15
+    },
+    {
+      "name": "Diego",
+      "lastName": "Armas",
+      "age": "22",
+      "address": "calle 1",
+      "email": "diego@gmail.com",
+      "password": "alonso123",
+      "dermatologistId": 0,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 16
+    }
+  ],
+  "dermatologists": [
+    {
+      "name": "Diego",
+      "lastName": "Dextre",
+      "age": 18,
+      "address": "Huancayo",
+      "email": "17.dotero.17@gmail.com",
+      "password": "12345",
+      "urlImage": "https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Lele",
+      "lastName": "Ponse",
+      "age": 40,
+      "address": "Unknown",
+      "email": "miguel@gmail.com",
+      "password": "12345",
+      "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg"
+    },
+    {
+      "name": "Carlos",
+      "lastName": "KAK",
+      "age": "19",
+      "address": "Aglo",
+      "email": "algo@gmail.com",
+      "password": "12345",
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 3
+    },
+    {
+      "name": "Diego",
+      "lastName": "Jose",
+      "age": "20",
+      "address": "Junin",
+      "email": "jose@gmail.com",
+      "password": "12345",
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 4
+    },
+    {
+      "name": "Andy",
+      "lastName": "Ramirez",
+      "age": 18,
+      "address": "Huancayo",
+      "email": "17.dotero.17@gmail.com",
+      "password": "12345",
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 5
+    },
+    {
+      "name": "Aroa",
+      "lastName": "MQAMA",
+      "age": 18,
+      "address": "kjdde 444",
+      "email": "ithomx.222@gmail.com",
+      "password": "toto",
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 6
+    }
+  ],
+  "fileusers": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "filename": "",
+      "id": 3
+    },
+    {
+      "filename": "",
+      "id": 4
+    },
+    {
+      "filename": null,
+      "id": 5
+    },
+    {
+      "filename": null,
+      "id": 6
+    },
+    {
+      "filename": null,
+      "id": 7
+    },
+    {
+      "filename": "",
+      "id": 8
+    },
+    {
+      "filename": "",
+      "id": 9
+    }
+  ]
+}
