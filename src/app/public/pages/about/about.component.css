@@ -19,6 +19,7 @@
 }
 h1, h3{
   color: #FFFFFF;
+  text-align: justify
 }
 h1{
   padding: 10px;
@@ -28,12 +29,16 @@ h1{
 .the-team{
   display: flex;
   flex-wrap: wrap;
-  margin: 30px;
-
+  margin: auto;
+  justify-content:space-around;
 }
 
 .the-team img{
   width: 80px;
+}
+img{
+  border: solid #FFFFFF;
+  border-radius: 50px;
 }
 
 .jasmin{
@@ -53,14 +58,6 @@ h1{
   border: solid 13px rgba(33, 150, 243, 0);
   text-align: center;
 }
-
-
-.emilia{
-  width: 30%;
-  border: solid 13px rgba(33, 150, 243, 0);
-  text-align: center;
-}
-
 
 .thomas{
   width: 30%;

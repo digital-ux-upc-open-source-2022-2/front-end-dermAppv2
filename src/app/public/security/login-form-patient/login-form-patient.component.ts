@@ -9,6 +9,7 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
   styleUrls: ['./login-form-patient.component.css']
 })
 export class LoginFormPatientComponent implements OnInit {
+  hide = true;
   dataPatient: any = {
     name: "",
     lastName: "",
@@ -27,7 +28,7 @@ export class LoginFormPatientComponent implements OnInit {
   }
   Login(formTemplate: any){
     if(formTemplate.hasError('required') ){
-      console.log("algo salio mal")
+      console.log("something went wrong")
     }else{
       this.patientService.getPatients().subscribe((data)=>{
         data.map((e)=>{

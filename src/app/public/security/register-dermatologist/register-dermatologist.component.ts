@@ -13,8 +13,6 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
   styleUrls: ['./register-dermatologist.component.css']
 })
 export class RegisterDermatologistComponent implements OnInit {
-
-
   hide = true;
   public preview: string | undefined;
   public dataimage1 : string | undefined ;
@@ -25,7 +23,9 @@ export class RegisterDermatologistComponent implements OnInit {
     name: "",
     lastName: "",
     age: 18,
+    specialty: "",
     address: "",
+    gender: "",
     email: "",
     password: "",
     urlImage: "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg"
@@ -42,9 +42,10 @@ export class RegisterDermatologistComponent implements OnInit {
     this.FilesImgData = {} as FilesUsers;
     this.FilesImgDataForm = this.builder.group({
       firstname: ['', Validators.required],
-      speciality: ['', Validators.required],
+      specialty: ['', Validators.required],
       lastname: ['', Validators.required],
       age: ['', Validators.required],
+      gender: ['', Validators.required],
       location: [''],
       email: ['', Validators.required],
       password: ['', Validators.required]
@@ -52,7 +53,8 @@ export class RegisterDermatologistComponent implements OnInit {
   }
 
   get firstname(){ return this.FilesImgDataForm.controls['firstname'] }
-  get speciality(){ return this.FilesImgDataForm.controls['speciality'] }
+  get specialty(){ return this.FilesImgDataForm.controls['specialty'] }
+  get gender(){ return this.FilesImgDataForm.controls['gender'] }
   get lastname(){ return this.FilesImgDataForm.controls['lastname'] }
   get age(){ return this.FilesImgDataForm.controls['age'] }
   get location(){ return this.FilesImgDataForm.controls['location'] }

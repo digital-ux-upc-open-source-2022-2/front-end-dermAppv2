@@ -87,7 +87,7 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
     console.log(id);
     this.patientsService.getById(id).subscribe((response:any)=> {
       this.a.data=response;
-      this.router.navigate(['/infoPatientSpecific/${id}'],this.a)
+      this.router.navigate([`/infoPatientSpecific/${id}`],this.a)
     })
     console.log(this.a);
   }

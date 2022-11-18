@@ -120,7 +120,7 @@ import { RegisterPatientComponent } from './public/security/register-patient/reg
         MatDatepickerModule,
         MatNativeDateModule,
         MatOptionModule,
-        FormsModule
+        FormsModule,
     ],
   providers: [PatientsService, DermatologistsService,ProfilesImgService],
   bootstrap: [AppComponent]

@@ -7,5 +7,9 @@ export interface Patient {
   email:string;
   password:string;
   dermatologistId: number,
+  diagnostic: string,
+  treatment: string,
+  status: string,
+  description: string,
   urlImage:string;
 }

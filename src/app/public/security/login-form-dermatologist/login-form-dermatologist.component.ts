@@ -8,6 +8,7 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
   styleUrls: ['./login-form-dermatologist.component.css']
 })
 export class LoginFormDermatologistComponent implements OnInit {
+  hide = true;
   dataDermatologist: any = {
     name: "",
     lastName: "",

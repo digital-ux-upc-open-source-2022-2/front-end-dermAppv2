@@ -1,5 +1,17 @@
 <div class="content" >
-
+  <form class="content1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Profile</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image width="50px"  [src]="preview" alt="">
+      <label >Filename : {{dataimage1}}</label>
+      <mat-card-actions>
+        <input  mat-button (change)="capture_file($event)" type="file">
+        <button mat-button (click)="Uploadfile()">Upload file</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
   <form class="content2" #formTemplate='ngForm'>
     <h1> Complete your data: </h1>
     <mat-form-field appearance="fill">
@@ -15,6 +27,11 @@
     <mat-form-field appearance="fill">
       <mat-label>Age</mat-label>
       <input matInput name="age" type="text" [(ngModel)]="dataPatient!.age" required placeholder="Age">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <input matInput name="gender" type="text" [(ngModel)]="dataPatient!.gender" required placeholder="Male or Female">
     </mat-form-field>
 
     <mat-form-field appearance="fill">

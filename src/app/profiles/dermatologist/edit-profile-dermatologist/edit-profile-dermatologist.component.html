@@ -1,9 +1,6 @@
 <div class="editProfile">
   <div class="edit-profile-section1">
     <img src="{{this.dermatologist?.urlImage}}" alt="User profile photo" width="350px"/>
-    <div class="btn">
-      <button mat-raised-button>Insert image</button>
-    </div>
 
   </div>
   <div class="edit-profile-section2">
@@ -12,27 +9,30 @@
         <mat-label>Name</mat-label>
         <input matInput name="name" value="{{this.dermatologist?.name}}" placeholder="Ex. Leonardo" [(ngModel)]="dermatologist!.name">
       </mat-form-field>
-
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Last Name</mat-label>
         <input matInput name="lastName" value="{{this.dermatologist?.lastName}}" placeholder="Ex. 36" [(ngModel)]="dermatologist!.lastName">
       </mat-form-field>
-
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Age</mat-label>
         <input matInput name="Age" value="{{this.dermatologist?.age}}" placeholder="Ex. 36" [(ngModel)]="dermatologist!.age">
       </mat-form-field>
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Address</mat-label>
-        <input matInput name="address" value="{{this.dermatologist?.address}}" placeholder="Ex. Lima" [(ngModel)]="dermatologist!.address">
-      </mat-form-field><mat-form-field class="example-full-width" appearance="outline">
+        <input matInput name="Address" value="{{this.dermatologist?.address}}" placeholder="Ex. Lima" [(ngModel)]="dermatologist!.address">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput name="Email" value="{{this.dermatologist?.email}}" placeholder="Ex. exp@gmail.com" [(ngModel)]="dermatologist!.email">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Url Image</mat-label>
       <input matInput name="urlImage" value="{{this.dermatologist?.urlImage}}" placeholder="Ex. Lima" [(ngModel)]="dermatologist!.urlImage">
     </mat-form-field>
     </form>
 
     <div class="btn">
-      <button mat-raised-button (click)="updatePatient()">Save Changes</button>
+      <button mat-raised-button (click)="updatePatient(dermatologist.id)">Save Changes</button>
     </div>
 
 

@@ -1,82 +1,43 @@
 {
   "patients": [
     {
-      "name": "leonardo",
-      "lastName": "Rivera",
-      "age": 50,
-      "address": "Santa anita",
-      "email": "leonardo@gmail.com",
+      "name": "Alonso",
+      "lastName": "Armas",
+      "age": "22",
+      "address": "Street 3",
+      "gender": "Male",
+      "email": "alonso1596@gmail.com",
       "password": "12345",
-      "dermatologistId": 2,
-      "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg",
-      "id": 8
+      "dermatologistId": 5,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg"
+      "description" : "Hola",
+      "id": 17
     },
     {
-      "name": "Romina",
+      "name": "Alvaro",
       "lastName": "Taboada",
-      "age": 18,
-      "address": "Lima",
-      "email": "limas@gmail.com",
+      "age": "25",
+      "address": "Street 35",
+      "gender": "Male",
+      "email": "alvaro@gmail.com",
       "password": "12345",
-      "dermatologistId": 1,
-      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-IFVAnDFmPDjhijJijwlt_XvLuLh3FJV-Ug&usqp=CAU",
-      "id": 11
-    },
-    {
-      "name": "Jose",
-      "lastName": "Torres",
-      "age": "19",
-      "address": "Unknown",
-      "email": "torres@gmail.com",
-      "password": "12345",
-      "dermatologistId": 2,
-      "urlImage": "https://img.freepik.com/foto-gratis/guapo-exitoso-hombre-negocios-sonriente_176420-19024.jpg?w=2000",
-      "id": 13
-    },
-    {
-      "name": "Diego",
-      "lastName": "Armas",
-      "age": "20",
-      "address": "calle 1",
-      "email": "u202017237@upc.edu.pe",
-      "password": "12345",
-      "dermatologistId": 2,
-      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
-      "id": 14
-    },
-    {
-      "name": "Ana Romina",
-      "lastName": "Tang",
-      "age": "22",
-      "address": "calle 2",
-      "email": "valetodo@gmail.com",
-      "password": "123456",
-      "dermatologistId": 0,
-      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
-      "id": 15
-    },
-    {
-      "name": "Diego",
-      "lastName": "Armas",
-      "age": "22",
-      "address": "calle 1",
-      "email": "diego@gmail.com",
-      "password": "alonso123",
-      "dermatologistId": 0,
-      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
-      "id": 16
+      "dermatologistId": 5,
+      "urlImage": "https://cine1documental.files.wordpress.com/2015/01/foto-carnet.jpg",
+      "description" : "",
+      "id": 18
     }
   ],
   "dermatologists": [
     {
-      "name": "Diego",
-      "lastName": "Dextre",
-      "age": 18,
-      "address": "Huancayo",
-      "email": "17.dotero.17@gmail.com",
+      "id": 1,
+      "name": "Lele",
+      "lastName": "Ponse",
+      "age": 40,
+      "address": "Unknown",
+      "email": "miguel@gmail.com",
       "password": "12345",
-      "urlImage": "https://img.freepik.com/foto-gratis/retrato-joven-sonriente-gafas_171337-4842.jpg?w=2000",
-      "id": 1
+      "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg",
+      "specialty": "Medical Dermatologist"
     },
     {
       "id": 2,

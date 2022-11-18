@@ -27,6 +27,7 @@ export class RegisterPatientComponent implements OnInit {
     lastName: "",
     age: 18,
     address: "",
+    gender: "",
     email: "",
     password: "",
     dermatologistId: 0,
@@ -44,6 +45,7 @@ export class RegisterPatientComponent implements OnInit {
       name: ['', Validators.required],
       lastName: ['', Validators.required],
       age: ['', Validators.required],
+      gender: ['', Validators.required],
       address: ['', Validators.required],
       email: [''],
       password: ['', Validators.required],
@@ -53,6 +55,7 @@ export class RegisterPatientComponent implements OnInit {
   get name(){ return this.FilesDataForm.controls['name'] }
   get lastName(){ return this.FilesDataForm.controls['lastName'] }
   get age(){ return this.FilesDataForm.controls['age'] }
+  get gender(){ return this.FilesDataForm.controls['gender'] }
   get address(){ return this.FilesDataForm.controls['address'] }
   get email(){ return this.FilesDataForm.controls['email'] }
   get password(){ return this.FilesDataForm.controls['password'] }

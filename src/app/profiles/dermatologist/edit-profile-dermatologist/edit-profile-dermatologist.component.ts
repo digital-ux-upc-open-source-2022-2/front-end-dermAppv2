@@ -10,14 +10,15 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
 })
 export class EditProfileDermatologistComponent implements OnInit {
   dermatologist: any = {
-    name: "as",
-    lastName: "asgsa",
+    name: "",
+    lastName: "",
     age: 18,
-    address: "asg",
-    email: "sagsa",
-    password: "sgsa",
+    address: "",
+    email: "",
+    specialty: "",
+    password: "",
     dermatologistId: 0,
-    urlImage: "sagsa"
+    urlImage: ""
   }
   next = true;
   constructor(private router: Router, private dermatologistService: UserService) { }
@@ -27,9 +28,8 @@ export class EditProfileDermatologistComponent implements OnInit {
     this.dermatologist = JSON.parse( localStorage.getItem("dermatologist"));
     //console.log(this.dermatologist)
   }
-  updatePatient(){
+  updatePatient(id: number){
     console.log(this.dermatologist.urlImage);
-    this.dermatologist.id = 1;
     this.dermatologistService.UpdateDermatologist(this.dermatologist.id, this.dermatologist).subscribe((response)=>{
       console.log(response);
       this.router.navigate(['profile']);

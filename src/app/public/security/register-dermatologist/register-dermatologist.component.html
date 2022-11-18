@@ -1,6 +1,4 @@
 <div class="content" >
-
-
   <form class="content1">
     <mat-card class="example-card">
       <mat-card-header>
@@ -29,6 +27,16 @@
     <mat-form-field appearance="fill">
       <mat-label>Age</mat-label>
       <input matInput name="age" type="text" [(ngModel)]="dataDermatologist!.age" required placeholder="Age">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <input matInput name="gender" type="text" [(ngModel)]="dataDermatologist!.gender" required placeholder="Male or Female">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Specialty</mat-label>
+      <input matInput name="specialty" type="text" [(ngModel)]="dataDermatologist!.specialty" required placeholder="Specialty">
     </mat-form-field>
 
     <mat-form-field appearance="fill">

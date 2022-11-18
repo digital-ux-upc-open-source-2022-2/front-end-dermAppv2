@@ -18,7 +18,7 @@
     <h1>SELECT THE DERMATOLOGIST OF YOUR CHOICE</h1>
     <div class="doctors">
       <div class="content-doctors" *ngFor="let item of this.dermatologists">
-        <img src="{{item.urlImage}}" alt="">
+        <img src="{{item.urlImage}}" alt="" width="100px" height="150px">
         <h2>{{item.name}} {{item.lastName}}</h2>
         <h2>{{item.age}} years old</h2>
         <button (click)="updatePatient(item.id)">Select</button>

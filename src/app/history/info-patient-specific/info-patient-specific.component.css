@@ -6,3 +6,20 @@
 .example-spacer{
   flex: 1 1 auto;
 }
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container h1{
+  font-size: 35px;
+  padding: 15px 0;
+}
+.example-full-width{
+  text-align: center;
+}
+.text-body{
+  height: 250px;
+}

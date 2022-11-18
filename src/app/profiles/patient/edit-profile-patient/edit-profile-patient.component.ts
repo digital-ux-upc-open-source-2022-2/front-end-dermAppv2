@@ -24,7 +24,7 @@ export class EditProfilePatientComponent implements OnInit {
     // @ts-ignore
     this.patient = JSON.parse( localStorage.getItem("patient"));
   }
-  updatePatient(){
+  updatePatient(id: number){
     console.log(this.patient);
     this.patientService.UpdatePatient(this.patient.id, this.patient).subscribe((response)=>{
       console.log(response);

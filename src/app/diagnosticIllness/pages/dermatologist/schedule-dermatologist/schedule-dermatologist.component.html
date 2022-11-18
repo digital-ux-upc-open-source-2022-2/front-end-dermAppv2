@@ -15,7 +15,7 @@
       <mat-nav-list>
         <mat-list-item *ngFor="let link of horarios">
           <h4 matLine>{{link.range}}</h4><br>
-          <h4 class="list-tasks" >{{link.patient}}</h4>
+          <h4 class="list-tasks" >{{this.patient.name}}</h4>
         </mat-list-item>
       </mat-nav-list>
     </div>

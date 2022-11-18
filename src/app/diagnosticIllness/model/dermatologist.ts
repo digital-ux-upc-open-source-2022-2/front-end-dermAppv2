@@ -3,6 +3,7 @@ export interface Dermatologist {
   name:string;
   lastName:string;
   age:number;
+  specialty: string;
   address:string;
   email:string;
   password:string;
