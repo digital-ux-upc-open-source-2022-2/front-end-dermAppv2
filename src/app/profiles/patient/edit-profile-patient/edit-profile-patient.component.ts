@@ -10,7 +10,6 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
 export class EditProfilePatientComponent implements OnInit {
   patient: any = {
     name: "",
-    lastName: "",
     age: 18,
     address: "",
     email: "",

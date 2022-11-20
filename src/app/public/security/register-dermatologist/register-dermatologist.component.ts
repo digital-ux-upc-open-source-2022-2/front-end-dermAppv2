@@ -21,14 +21,10 @@ export class RegisterDermatologistComponent implements OnInit {
   FilesImgData: FilesUsers;
   FilesImgDataForm: FormGroup;dataDermatologist: any = {
     name: "",
-    lastName: "",
     age: 18,
-    specialty: "",
     address: "",
-    gender: "",
     email: "",
     password: "",
-    urlImage: "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg"
   }
   next = true;
   isEmpty: boolean = false;
@@ -122,7 +118,8 @@ export class RegisterDermatologistComponent implements OnInit {
       console.log("Something went wrong")
     }else{
       this.dermatologistService.getDermatologists().subscribe((data)=>{
-        data.map((e)=>{
+        // @ts-ignore
+        data.content.map((e)=>{
           if(e.email === this.dataDermatologist?.email){
             this.next = false;
           }
@@ -134,8 +131,9 @@ export class RegisterDermatologistComponent implements OnInit {
           this.router.navigate(['login-dermatologist']).then();
           //localStorage.setItem("dermatologist", JSON.parse(this.dataDermatologist))
         }
+        // @ts-ignore
+        console.log(data.content);
       })
     }
   }
-
 }

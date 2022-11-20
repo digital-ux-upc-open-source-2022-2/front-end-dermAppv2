@@ -10,6 +10,6 @@ export class DermatologistsService extends BaseService<Dermatologist>{
 
   constructor(http:HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:3000/api/v1/dermatologists';
+    this.basePath = '/api/v1/dermatologists';
   }
 }

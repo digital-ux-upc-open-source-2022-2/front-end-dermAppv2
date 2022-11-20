@@ -12,12 +12,11 @@ export class LoginFormPatientComponent implements OnInit {
   hide = true;
   dataPatient: any = {
     name: "",
-    lastName: "",
     age: 18,
     address: "",
     email: "",
     password: "",
-    urlImage: ""
+
   }
   next = true;
 
@@ -31,12 +30,15 @@ export class LoginFormPatientComponent implements OnInit {
       console.log("something went wrong")
     }else{
       this.patientService.getPatients().subscribe((data)=>{
-        data.map((e)=>{
+        // @ts-ignore
+        data.content.map((e)=>{
           if(e.email === this.dataPatient?.email && e.password === this.dataPatient?.password){
             this.router.navigate(['files-patient']).then();
             localStorage.setItem("patient", JSON.stringify(e));
           }
         })
+        // @ts-ignore
+        console.log(data.content);
       })
     }
   }

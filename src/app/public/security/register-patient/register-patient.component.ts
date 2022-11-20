@@ -24,14 +24,11 @@ export class RegisterPatientComponent implements OnInit {
   next = true;
   dataPatient: any = {
     name: "",
-    lastName: "",
     age: 18,
     address: "",
-    gender: "",
     email: "",
     password: "",
     dermatologistId: 0,
-    urlImage: "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg"
   }
   isEmpty: boolean = false;
   constructor(private sanitizer: DomSanitizer,
@@ -118,11 +115,13 @@ export class RegisterPatientComponent implements OnInit {
       console.log("Something went wrong")
     }else{
       this.patient.getPatients().subscribe((data)=>{
-        data.map((e)=>{
+        // @ts-ignore
+        data.content.map((e)=>{
           if(e.email === this.dataPatient?.email){
             this.next = false;
           }
         })
+
         if(this.next){
           this.patient.CreatePatient(this.dataPatient).subscribe((response) =>{
             console.log(response);
@@ -130,6 +129,8 @@ export class RegisterPatientComponent implements OnInit {
           this.router.navigate(['login-patient']).then();
           localStorage.setItem("patient", JSON.parse(this.dataPatient));
         }
+        // @ts-ignore
+        console.log(data.content);
       })
     }
   }

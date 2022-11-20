@@ -10,6 +10,6 @@ export class ProfilesImgService extends BaseService<FilesUsers>{
 
   constructor(http:HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:3000/api/v1/filesusers';
+    this.basePath = '/api/v1/filesusers';
   }
 }

@@ -70,7 +70,7 @@ export class ListPatientsComponent implements OnInit,AfterViewInit {
 
   getAllPatients() {
     this.patientsService.getAll().subscribe((response: any) => {
-      this.dataSource.data = response;
+      this.dataSource.data = response.content;
     });
   }
 

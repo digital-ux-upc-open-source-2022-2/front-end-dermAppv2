@@ -10,6 +10,6 @@ export class PatientsService extends BaseService<Patient>{
 
   constructor(http:HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:3000/api/v1/patients';
+    this.basePath = '/api/v1/patients';
   }
 }

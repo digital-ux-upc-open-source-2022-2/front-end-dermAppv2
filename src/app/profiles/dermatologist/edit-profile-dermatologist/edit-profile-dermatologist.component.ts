@@ -11,11 +11,9 @@ import {UserService} from "../../../diagnosticIllness/services/user.service";
 export class EditProfileDermatologistComponent implements OnInit {
   dermatologist: any = {
     name: "",
-    lastName: "",
     age: 18,
     address: "",
     email: "",
-    specialty: "",
     password: "",
     dermatologistId: 0,
     urlImage: ""

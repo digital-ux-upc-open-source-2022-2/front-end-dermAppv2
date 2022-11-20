@@ -11,30 +11,31 @@ export class LoginFormDermatologistComponent implements OnInit {
   hide = true;
   dataDermatologist: any = {
     name: "",
-    lastName: "",
     age: 18,
     address: "",
     email: "",
     password: "",
-    urlImage: ""
   }
   next = true;
-  constructor(private router: Router, private patientService: UserService) { }
+  constructor(private router: Router, private dermatologistService: UserService) { }
 
   ngOnInit(): void {
   }
   Login(formTemplate: any){
     if(formTemplate.hasError('required') ){
-      console.log("algo salio mal")
+      console.log("something went wrong")
     }else{
-      this.patientService.getDermatologists().subscribe((data)=>{
+      this.dermatologistService.getDermatologists().subscribe((data)=>{
         console.log(this.dataDermatologist.email)
-        data.map((e)=>{
+        // @ts-ignore
+        data.content.map((e)=>{
           if(e.email === this.dataDermatologist?.email && e.password === this.dataDermatologist?.password){
             this.router.navigate(['patients']).then();
             localStorage.setItem("dermatologist", JSON.stringify(e));
           }
         })
+        // @ts-ignore
+        console.log(data.content);
       })
     }
   }

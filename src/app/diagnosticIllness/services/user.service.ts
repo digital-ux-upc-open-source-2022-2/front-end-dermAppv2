@@ -8,8 +8,8 @@ import {Dermatologist} from "../model/dermatologist";
   providedIn: 'root'
 })
 export class UserService {
-  apiURLPatients = "http://localhost:3000/api/v1/patients"
-  apiURLDermatologists = "http://localhost:3000/api/v1/dermatologists"
+  apiURLPatients = "/api/v1/patients"
+  apiURLDermatologists = "/api/v1/dermatologists"
 
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': "application/json"})

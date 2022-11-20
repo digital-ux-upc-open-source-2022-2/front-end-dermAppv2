@@ -35,17 +35,18 @@ export class MyDoctorPatientComponent implements OnInit {
   }
   getDataDoctor(){
     this.patientService.getDermatologistsById(this.patient!.dermatologistId).subscribe((response)=>{
-      this.dermatologist = response;
+      // @ts-ignore
+      this.dermatologist = response.content;
     })
   }
   getDataDermatologists(){
     this.patientService.getDermatologists().subscribe((response) => {
-      this.dermatologists = response;
+      // @ts-ignore
+      this.dermatologists = response.content;
       console.log(response)
     })
   }
   updatePatient(id: Number){
-    // @ts-ignore
     this.patient.dermatologistId = id;
     this.patientService.UpdatePatient(this.patient?.id, this.patient).subscribe((response)=>{
       this.selectDermatologist = true;
