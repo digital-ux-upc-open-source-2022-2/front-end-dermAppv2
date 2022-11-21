@@ -6,24 +6,24 @@ import {AboutComponent} from "./public/pages/about/about.component";
 import {LoginFormComponent} from "./public/security/login-form/login-form.component";
 import {LoginFormDermatologistComponent} from "./public/security/login-form-dermatologist/login-form-dermatologist.component";
 import {LoginFormPatientComponent} from "./public/security/login-form-patient/login-form-patient.component";
-import {ViewPatientComponent} from "./diagnosticIllness/pages/patient/view-patient/view-patient.component";
-import {MyDoctorPatientComponent} from "./diagnosticIllness/pages/patient/my-doctor-patient/my-doctor-patient.component";
-import {RemindersPatientComponent} from "./diagnosticIllness/pages/patient/reminders-patient/reminders-patient.component";
+import {ViewPatientComponent} from "./diagnostic/pages/patient/view-patient/view-patient.component";
+import {MyDoctorPatientComponent} from "./diagnostic/pages/patient/my-doctor-patient/my-doctor-patient.component";
+import {RemindersPatientComponent} from "./diagnostic/pages/patient/reminders-patient/reminders-patient.component";
 import {ProfilePatientComponent} from "./profiles/patient/profile-patient/profile-patient.component";
 import {EditProfilePatientComponent} from "./profiles/patient/edit-profile-patient/edit-profile-patient.component";
-import {MyFilesPatientComponent} from "./diagnosticIllness/pages/patient/my-files-patient/my-files-patient.component";
-import {MessagesPatientComponent} from "./diagnosticIllness/pages/patient/messages-patient/messages-patient.component";
-import {HomePatientComponent} from "./diagnosticIllness/pages/patient/home-patient/home-patient.component";
+import {MyFilesPatientComponent} from "./diagnostic/pages/patient/my-files-patient/my-files-patient.component";
+import {MessagesPatientComponent} from "./diagnostic/pages/patient/messages-patient/messages-patient.component";
+import {HomePatientComponent} from "./diagnostic/pages/patient/home-patient/home-patient.component";
 import {TypeOfUserComponent} from "./public/security/type-of-user/type-of-user.component";
 import {
   ViewDermatologistComponent
-} from "./diagnosticIllness/pages/dermatologist/view-dermatologist/view-dermatologist.component";
+} from "./diagnostic/pages/dermatologist/view-dermatologist/view-dermatologist.component";
 import {
   ChatDermatologistComponent
-} from "./diagnosticIllness/pages/dermatologist/chat-dermatologist/chat-dermatologist.component";
+} from "./diagnostic/pages/dermatologist/chat-dermatologist/chat-dermatologist.component";
 import {
   AnalyticsDermatologistComponent
-} from "./diagnosticIllness/pages/dermatologist/analytics-dermatologist/analytics-dermatologist.component";
+} from "./diagnostic/pages/dermatologist/analytics-dermatologist/analytics-dermatologist.component";
 import {ListPatientsComponent} from "./history/list-patients/list-patients.component";
 import {
   ProfileDermatologistComponent
@@ -34,7 +34,7 @@ import {
 import {InfoPatientSpecificComponent} from "./history/info-patient-specific/info-patient-specific.component";
 import {
   ScheduleDermatologistComponent
-} from "./diagnosticIllness/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component";
+} from "./diagnostic/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {
   RegisterDermatologistComponent

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
-import { FilesUsers } from 'src/app/diagnosticIllness/model/files-users';
+import { FilesUsers } from 'src/app/diagnostic/model/files-users';
 import {DomSanitizer} from "@angular/platform-browser";
 import {Router} from "@angular/router";
-import { ProfilesImgService } from 'src/app/diagnosticIllness/services/profiles-img.service';
-import { UserService } from 'src/app/diagnosticIllness/services/user.service';
+import { ProfilesImgService } from 'src/app/diagnostic/services/profiles-img.service';
+import { UserService } from 'src/app/diagnostic/services/user.service';
 
 @Component({
   selector: 'app-my-files-patient',

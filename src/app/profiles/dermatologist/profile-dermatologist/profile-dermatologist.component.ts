@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
-import {DermatologistsService} from "../../../diagnosticIllness/services/dermatologists.service";
-import {Patient} from "../../../diagnosticIllness/model/patient";
+import {DermatologistsService} from "../../../diagnostic/services/dermatologists.service";
+import {Patient} from "../../../diagnostic/model/patient";
 import {Sort} from "@angular/material/sort";
-import {Dermatologist} from "../../../diagnosticIllness/model/dermatologist";
+import {Dermatologist} from "../../../diagnostic/model/dermatologist";
 
 export interface Dessert {
   calories: number;

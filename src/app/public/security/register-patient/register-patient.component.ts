@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
-import {FilesUsers} from "../../../diagnosticIllness/model/files-users";
+import {FilesUsers} from "../../../diagnostic/model/files-users";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {DomSanitizer} from "@angular/platform-browser";
 import {Router} from "@angular/router";
-import {ProfilesImgService} from "../../../diagnosticIllness/services/profiles-img.service";
-import {UserService} from "../../../diagnosticIllness/services/user.service";
+import {ProfilesImgService} from "../../../diagnostic/services/profiles-img.service";
+import {UserService} from "../../../diagnostic/services/user.service";
 
 @Component({
   selector: 'app-register-patient',

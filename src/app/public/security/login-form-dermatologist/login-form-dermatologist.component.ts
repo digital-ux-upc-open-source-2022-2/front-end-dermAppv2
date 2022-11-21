@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {UserService} from "../../../diagnosticIllness/services/user.service";
+import {UserService} from "../../../diagnostic/services/user.service";
 
 @Component({
   selector: 'app-login-form-dermatologist',

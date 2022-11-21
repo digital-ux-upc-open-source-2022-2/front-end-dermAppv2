@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Patient} from "../../diagnosticIllness/model/patient";
+import {Patient} from "../../diagnostic/model/patient";
 import {ActivatedRoute, Router} from "@angular/router";
-import {UserService} from "../../diagnosticIllness/services/user.service";
+import {UserService} from "../../diagnostic/services/user.service";
 import {toInteger} from "lodash";
 
 @Component({
